@@ -5,11 +5,20 @@
 @import "normalize";
 
 // Comment out this import if you are customizing you imports below
-@import "foundation";
-
+@import "foundation/components/global";
+@import "foundation/components/grid";
+@import "foundation/components/visibility";
+@import "foundation/components/block-grid";
+@import "foundation/components/type";
+@import "foundation/components/section";
+@import "foundation/components/clearing";
 @import "compass/css3";
 
 @import "site/base";
+@import "site/splash";
+@import "responsive";
+
+
 // Import specific parts of Foundation by commenting the import "foundation"
 // and uncommenting what you want below. You must uncomment the following if customizing
 

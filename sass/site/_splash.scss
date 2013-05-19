@@ -1,7 +1,11 @@
 #splash {
-  .title {
-    color: $primary-color;
-  }
-  .about {
+  margin-top: 15%;
+
+  .external {
+    li {
+      display: inline;
+      margin: 0 20px;
+      font-size: emCalc(40px);
+    }
   }
 }

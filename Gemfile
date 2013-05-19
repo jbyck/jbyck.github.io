@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 # Site
-gem 'rake'
 gem 'jekyll'
 gem 'foreman'
 

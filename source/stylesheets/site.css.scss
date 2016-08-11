@@ -1,8 +1,18 @@
 @charset "utf-8";
+
+$breakpoints: (
+  small: 0px,
+  medium: 750px,
+  large: 1024px,
+  xlarge: 1200px,
+  xxlarge: 1440px,
+);
+
 @import "foundation-sites/assets/foundation";
 
 $jb-blue:               #0040FF;
 $jb-box-border-width:   4px;
+
 
 @mixin box-mixin {
   border: $jb-box-border-width solid $jb-blue;
@@ -30,12 +40,12 @@ body {
 section.sidebar {
   header {
     @include box-mixin;
-    width: 200px;
-    height: 200px;
+    // width: 200px;
+    // height: 200px;
     color: $jb-blue;
     h1 {
       padding: 10px;
-      line-height: 40px;
+      line-height: 45px;
       text-transform: uppercase;
       color: $jb-blue;
     }

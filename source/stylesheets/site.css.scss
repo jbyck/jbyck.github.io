@@ -1,0 +1,56 @@
+@charset "utf-8";
+@import "foundation-sites/assets/foundation";
+
+$jb-blue:               #0040FF;
+$jb-box-border-width:   4px;
+
+@mixin box-mixin {
+  border: $jb-box-border-width solid $jb-blue;
+  padding: 4px;
+}
+
+body {
+  font-family: 'Varela-Round', sans-serif;
+}
+
+.box {
+  @include box-mixin;
+}
+
+.wrapper {
+  margin-top: 40px;
+}
+
+@include breakpoint(small only) {
+  section.sidebar, section.index .columns {
+    margin-bottom: 30px;
+  }
+}
+
+section.sidebar {
+  header {
+    @include box-mixin;
+    width: 200px;
+    height: 200px;
+    color: $jb-blue;
+    h1 {
+      padding: 10px;
+      line-height: 40px;
+      text-transform: uppercase;
+      color: $jb-blue;
+    }
+  }
+}
+
+section.index {
+  color: $jb-blue;
+
+  h2 {
+    line-height: 35px;
+    font-size: 36px;
+  }
+
+  .box {
+    padding: 35px 35px 50px 35px;
+  }
+}

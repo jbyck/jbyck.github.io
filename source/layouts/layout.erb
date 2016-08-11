@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || 'Jason Byck' %></title>
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet'>
+
+    <%= stylesheet_link_tag :site %>
+    <%= javascript_include_tag :all %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <div class='row wrapper'>
+      <section class='sidebar columns small-12 medium-3'>
+        <header>
+          <h1 class='text-left'>
+            Jason
+            Byck
+          </h1>
+        </header>
+      </section>
+      <section class='content columns small-12 medium-9'>
+        <%= yield %>
+      </section>
+    </div>
+  </body>
+</html>

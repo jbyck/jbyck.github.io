@@ -40,11 +40,12 @@ body {
 section.sidebar {
   header {
     @include box-mixin;
-    // width: 200px;
-    // height: 200px;
+    width: 200px;
+    height: 200px;
     color: $jb-blue;
     h1 {
       padding: 10px;
+      // padding-bottom: 40px;
       line-height: 45px;
       text-transform: uppercase;
       color: $jb-blue;
@@ -56,6 +57,7 @@ section.index {
   color: $jb-blue;
 
   h2 {
+    margin-bottom: 25px;
     line-height: 35px;
     font-size: 36px;
   }

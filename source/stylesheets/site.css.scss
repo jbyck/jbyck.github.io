@@ -39,7 +39,6 @@ body {
 
 section.sidebar {
   header {
-    @include box-mixin;
     width: 200px;
     height: 200px;
     color: $jb-blue;

@@ -16,11 +16,12 @@ $jb-box-border-width:   4px;
 
 @mixin box-mixin {
   border: $jb-box-border-width solid $jb-blue;
-  padding: 4px;
+  padding: 20px 20px 50px 20px;
 }
 
 body {
   font-family: 'Varela-Round', sans-serif;
+  color: $jb-blue;
 }
 
 .box {
@@ -31,37 +32,39 @@ body {
   margin-top: 40px;
 }
 
-@include breakpoint(small only) {
-  section.sidebar, section.index .columns {
-    margin-bottom: 30px;
-  }
-}
-
 section.sidebar {
-  header {
+  h1 {
+    position: absolute;
+    border: $jb-box-border-width solid $jb-blue;
+    padding: 10px 10px 40px 10px;
+    line-height: 45px;
+    text-transform: uppercase;
+    z-index: 100;
+  }
+  img.profile {
+    border-radius: 50%;
     width: 200px;
     height: 200px;
-    color: $jb-blue;
-    h1 {
-      padding: 10px;
-      // padding-bottom: 40px;
-      line-height: 45px;
-      text-transform: uppercase;
-      color: $jb-blue;
-    }
+    position: absolute;
+    top: 150px;
   }
+
 }
 
 section.index {
-  color: $jb-blue;
-
   h2 {
     margin-bottom: 25px;
     line-height: 35px;
     font-size: 36px;
   }
+}
 
-  .box {
-    padding: 35px 35px 50px 35px;
+@include breakpoint(small only) {
+  section.sidebar, section.index .columns {
+    margin-bottom: 30px;
+  }
+
+  section.sidebar h1, section.sidebar img.profile {
+    position: relative ! important;
   }
 }

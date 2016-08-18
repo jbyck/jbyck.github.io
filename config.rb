@@ -23,20 +23,7 @@ configure :development do
   activate :livereload
 end
 
-###
-# Helpers
-###
-
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
-
 set :sass_assets_paths, [File.expand_path('bower_components', app.root)]
-
-# import_path File.expand_path('bower_components', )
 
 # Build-specific configuration
 configure :build do

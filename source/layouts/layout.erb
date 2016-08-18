@@ -15,15 +15,14 @@
 
   <body class="<%= page_classes %>">
     <div class='row wrapper'>
-      <section class='sidebar columns small-12 medium-3'>
-        <header class='box'>
-          <h1 class='text-left'>
-            Jason
-            Byck
-          </h1>
-        </header>
+      <section class='sidebar columns small-12 medium-2'>
+        <h1 class='text-left'>
+          Jason<br />
+          Byck
+        </h1>
+        <img class='profile' src='/images/profile.jpg' />
       </section>
-      <section class='content columns small-12 medium-9'>
+      <section class='content columns small-12 medium-9 medium-offset-1'>
         <%= yield %>
       </section>
     </div>

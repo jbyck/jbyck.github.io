@@ -2,8 +2,7 @@
 
 $jb-blue: #0040FF;
 
-$medium-breakpoint: 1000px;
-$small-breakpoint:  700px;
+$small-breakpoint: 1000px;
 
 body {
   font-family: 'Varela Round', sans-serif;
@@ -28,8 +27,8 @@ body {
   }
 }
 
-p, .contact {
-  margin-bottom: 30px;
+p {
+  margin-bottom: 20px;
 }
 
 a {
@@ -51,19 +50,17 @@ ul.contact {
 
   li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 10px;
     font-size: 28px;
-  }
-}
 
-@media (max-width: $medium-breakpoint) {
-  .container {
-    width: 80%;
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }
 
 @media (max-width: $small-breakpoint) {
   .container {
-    width: 90%;
+    width: 80%;
   }
 }

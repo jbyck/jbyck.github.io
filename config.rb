@@ -25,6 +25,10 @@ end
 
 set :sass_assets_paths, [File.expand_path('bower_components', app.root)]
 
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-12777145-2'
+end
+
 # Build-specific configuration
 configure :build do
   # Minify CSS on build

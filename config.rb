@@ -26,6 +26,7 @@ end
 configure :deploy do |deploy|
   deploy.deploy_method  = :git
   deploy.branch         = 'master'
+  deploy.build_before   = true
 end
 
 set :sass_assets_paths, [File.expand_path('bower_components', app.root)]

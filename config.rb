@@ -23,6 +23,11 @@ configure :development do
   activate :livereload
 end
 
+configure :deploy do |deploy|
+  deploy.deploy_method  = :git
+  deploy.branch         = 'master'
+end
+
 set :sass_assets_paths, [File.expand_path('bower_components', app.root)]
 
 activate :google_analytics do |ga|

@@ -1,3 +1,0 @@
-name: Jason Byck
-exclude: [Gemfile, Gemfile.lock, Procfile, sass, coffee, config.rb, CNAME]
-pygments: true

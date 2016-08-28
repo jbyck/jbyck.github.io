@@ -1,0 +1,68 @@
+@import 'normalize.css';
+
+$jb-blue: #0040FF;
+
+$small-breakpoint: 1000px;
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  color: $jb-blue;
+
+}
+
+.container {
+  position: relative;
+  margin: 20px auto;
+  width: 50%;
+  max-width: 700px;
+
+  .row {
+    float: left;
+    clear: both;
+    width: 100%;
+  }
+
+  .center {
+    text-align: center;
+  }
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+a {
+  color: $jb-blue;
+}
+
+.profile {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+ul.contact {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+  margin: 25px 0;
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    display: inline;
+    margin: 0 10px;
+    font-size: 28px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: $small-breakpoint) {
+  .container {
+    width: 80%;
+  }
+}

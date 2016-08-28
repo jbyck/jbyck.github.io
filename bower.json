@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "normalize-css": "^4.2.0",
-    "flat-social-icons": "^0.0.2"
+    "normalize-css": "^4.2.0"
   }
 }

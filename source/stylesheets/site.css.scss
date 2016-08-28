@@ -32,7 +32,6 @@ p {
 }
 
 a {
-  text-decoration: none;
   color: $jb-blue;
 }
 
@@ -47,6 +46,9 @@ ul.contact {
   display: inline-block;
   padding: 0;
   margin: 25px 0;
+  a {
+    text-decoration: none;
+  }
 
   li {
     display: inline;

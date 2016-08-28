@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/middleman-contrib/middleman-deploy.git
+  revision: 243ab38b08896cd5a37d6845a01a5761b934a898
+  specs:
+    middleman-deploy (2.0.0.pre.alpha)
+      middleman-core (>= 3.2)
+      net-sftp
+      ptools
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -74,10 +83,6 @@ GEM
       servolux
       tilt (~> 1.4.1)
       uglifier (~> 3.0)
-    middleman-deploy (1.0.0)
-      middleman-core (>= 3.2)
-      net-sftp
-      ptools
     middleman-google-analytics (2.1.1)
       activesupport (~> 4.1)
       erubis
@@ -126,7 +131,7 @@ PLATFORMS
 
 DEPENDENCIES
   middleman (>= 4.0.0)
-  middleman-deploy (~> 1.0)
+  middleman-deploy!
   middleman-google-analytics (~> 2.1)
   middleman-livereload
   middleman-sprockets
